@@ -1,5 +1,5 @@
 name:                var-monad
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            The @VarMonad@ typeclass generalizes types of references.
 description:         The @VarMonad@ typeclass, as defined by /Type Classes: an exploration of the design space/ by SPJ et al, 1997.
 homepage:            https://github.com/chris-martin/var-monad
