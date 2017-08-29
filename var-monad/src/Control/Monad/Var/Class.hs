@@ -12,7 +12,7 @@ import System.IO (IO)
 import Data.IORef (IORef, newIORef, readIORef, writeIORef)
 
 -- MVar
-import Control.Concurrent.MVar (MVar, newMVar, readMVar, putMVar)
+import Control.Concurrent.MVar (MVar, newMVar, takeMVar, putMVar)
 
 -- ST
 import Control.Monad.ST (ST)
@@ -44,7 +44,7 @@ instance VarMonad IO IORef
 instance VarMonad IO MVar
   where
     new = newMVar
-    get = readMVar
+    get = takeMVar
     put = putMVar
 
 instance VarMonad STM TVar
