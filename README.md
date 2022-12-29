@@ -1,3 +1,1 @@
-# var-monad
-
-Hackage: https://hackage.haskell.org/package/var-monad
+Moved to https://github.com/typeclasses/var-monad
